@@ -1,5 +1,5 @@
 function addPaciente(){
-  $.post("http://manticora.ramocacho.cl/sisUrgencias/api/paciente", {
+  $.post("http://localhost:8000/api/paciente", {
      rut : $("#txtRut").val(),
      nombre : $("#txtNombre").val(),
      apePaterno : $("#txtApePat").val(),

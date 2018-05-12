@@ -6,7 +6,7 @@ $(document).ready(function() {
     localPacientes.forEach(e => {
       $.ajax({
         method: "GET",
-        url: "http://manticora.ramocacho.cl/sisUrgencias/api/pacienteswindow/" + e.rut,
+        url: "http://localhost:8000/api/pacienteswindow/" + e.rut,
         success: function (data) {
           $(".app-content").append(data);
         }
@@ -16,7 +16,7 @@ $(document).ready(function() {
   $("#btnNewAdmision").click(function(){
     $.ajax({
       method: "GET",
-      url: "http://manticora.ramocacho.cl/sisUrgencias/api/newAdmision",
+      url: "http://localhost:8000/api/newAdmision",
       success: function (data) {
         $(".app-content").append(data);
       }
@@ -26,7 +26,7 @@ $(document).ready(function() {
     let reg_value = this.value;
     $.ajax({
       method: "GET",
-      url: "http://manticora.ramocacho.cl/sisUrgencias/api/provincias",
+      url: "http://localhost:8000/api/provincias",
       data: {
         region: reg_value
       },
@@ -48,7 +48,7 @@ $(document).ready(function() {
     let prov_value = this.value;
     $.ajax({
       method: "GET",
-      url: "http://manticora.ramocacho.cl/sisUrgencias/api/comunas",
+      url: "http://localhost:8000/api/comunas",
       data: {
         provincia: prov_value
       },
@@ -82,7 +82,7 @@ function loadPaciente(control) {
       if(rut.length > 0){ 
       $.ajax({
         method: "GET",
-        url: "http://manticora.ramocacho.cl/sisUrgencias/api/pacientes/" + rut,
+        url: "http://localhost:8000/api/pacientes/" + rut,
         complete: function (xhr, statusText) {
           if (statusText == "success") {
             localPacientes.push({
@@ -104,7 +104,7 @@ function limpiarBox(control) {
   let parentBox = $(control).parents(".box").first().parent();
   $.ajax({
     method: "GET",
-    url: "http://manticora.ramocacho.cl/sisUrgencias/api/newAdmision",
+    url: "http://localhost:8000/api/newAdmision",
     success: function (data) {
       let localPacientes = JSON.parse(localStorage.getItem("pacientes"));
       let newLocalPacientes = localPacientes.filter(e => e.rut != $(control).attr("data-rut"));
@@ -155,7 +155,7 @@ function generarAdmision(control) {
       }
     }).then(e => {
       let rut = $(control).attr("data-rut");
-      $.post("http://manticora.ramocacho.cl/sisUrgencias/api/genAdmision", {
+      $.post("http://localhost:8000/api/genAdmision", {
         rut: rut,
         motivos: e.motivos,
         triage: triageValue

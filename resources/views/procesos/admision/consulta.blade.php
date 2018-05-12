@@ -22,9 +22,9 @@
                 <b class="col-sm-4">Motivos de Consulta</b>
                 <a class="tooltips col-sm-1" href="#">
                     <span>Los motivos en blanco no se guardarán</span>
-                    <img src="public/img/question.png" width="15" />
+                    <img src="img/question.png" width="15" />
                 </a>
-                <img class="btnAddMotivo col-sm-offset-5" onclick="addMotivo(this)" src="public/img/add.png" width="30" alt="">
+                <img class="btnAddMotivo col-sm-offset-5" onclick="addMotivo(this)" src="img/add.png" width="30" alt="">
             </div>
         </div>
         <div class="form-group motivos-form">

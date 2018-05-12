@@ -5,7 +5,7 @@
 	<div class="box">
 		@endif
 		<div data-widget="collapse" class="box-header with-border" style="background:#3c8dbc;color:white">
-			<img src="public/img/paciente.png" width="25" alt="">
+			<img src="img/paciente.png" width="25" alt="">
 			<h3 class="box-title">
 				@if ($paciente != null)
 				<span style="color:yellow">Paciente {{$paciente->Nombre}} 

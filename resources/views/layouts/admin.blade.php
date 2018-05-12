@@ -8,20 +8,20 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="public/css/font-awesome.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="public/css/AdminLTE.css">
+  <link rel="stylesheet" href="css/AdminLTE.css">
 
-  <link rel="stylesheet" href="public/css/sweetalert2.css">
-  <link rel="stylesheet" href="public/css/tooltip.css">
-  <link rel="stylesheet" type="text/css" href="public/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="css/sweetalert2.css">
+  <link rel="stylesheet" href="css/tooltip.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="public/css/_all-skins.min.css">
-  <link rel="apple-touch-icon" href="public/img/apple-touch-icon.png'">
-  <link rel="shortcut icon" href="public/img/favicon.ico">
+  <link rel="stylesheet" href="css/_all-skins.min.css">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png'">
+  <link rel="shortcut icon" href="img/favicon.ico">
   <style>
   .btnAddMotivo{
     cursor: pointer;
@@ -117,14 +117,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="public/js/bootstrap.min.js"></script>
-    <script src="public/js/sweetalert2.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.js"> </script>
     <!-- AdminLTE App -->
-    <script src="public/js/app.js"></script>
-    <script src="public/js/admision.js"> </script>
-    <script src="public/js/loadingoverlay.min.js"> </script>
-    <script src="public/js/addpaciente.js"> </script>
-<script type="text/javascript" charset="utf8" src="public/js/jquery.dataTables.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/admision.js"> </script>
+    <script src="js/loadingoverlay.min.js"> </script>
+    <script src="js/addpaciente.js"> </script>
+<script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
 <script>
 function spinnerAllWindow(){
     $.LoadingOverlay("show", {
